@@ -8,6 +8,7 @@ The [Australian soil and land survey field handbook (3rd edn)](https://www.publi
 The definitions in the [Australian soil and land survey field handbook (3rd edn)](https://www.publish.csiro.au/book/5230/) are organized in six chapters, each relating to a specific theme, such as Landform or Soil Profile. While the handbook is credited to the [National Committee on Soil and Terrain](https://www.directory.gov.au/portfolios/agriculture-and-water-resources/department-agriculture-and-water-resources/national-committee-soil-and-terrain), each chapter has separate authors. These authors were subject-matter experts who arranged the terms and definitions , acting as the content custodians for a theme. 
 
 ## Term encoding
+### Landform vocabulary
 
 ```turtle
 <http://anzsoil.org/def/au/asls/landform/morphological-type-H>
@@ -35,6 +36,8 @@ The definitions in the [Australian soil and land survey field handbook (3rd edn)
   skos:prefLabel "Compound morphological types"@en ;
 .
 ```
+
+### Soil profile vocabulary
 
 ```turtle
 <http://anzsoil.org/def/au/asls/soil-profile/field-texture-CS>
@@ -84,6 +87,7 @@ The recommended field texture grades as characterised by the behaviour of the mo
 ```
 
 ## Vocabulary metadata
+### Landform vocabulary
 
 ```turtle
 <http://anzsoil.org/def/au/asls/landform>
@@ -106,6 +110,8 @@ The recommended field texture grades as characterised by the behaviour of the mo
   skos:changeNote "2020-09-16 - made asls:landform a skos:ConceptScheme and added skos:inScheme link from all concepts" ;
 .
 ```
+
+### Soil profile vocabulary
 
 ```turtle
 <http://anzsoil.org/def/au/asls/soil-profile>
