@@ -10,6 +10,33 @@ The definitions in the [Australian soil and land survey field handbook (3rd edn)
 ## Term encoding
 
 ```turtle
+<http://anzsoil.org/def/au/asls/landform/morphological-type-H>
+  a skos:Concept ;
+  skos-ext:isMemberOf <http://anzsoil.org/def/au/asls/landform/morphological-types> ;
+  dcterms:description "compound landform element comprising a narrow crest and short adjoining slopes, the crest length being less than the width of the landform element."@en ;
+  dcterms:identifier "http://anzsoil.org/def/au/asls/landform/morphological-type-H"^^xsd:anyURI ;
+  rdfs:label "Hillock"@en ;
+  skos:definition "compound landform element comprising a narrow crest and short adjoining slopes, the crest length being less than the width of the landform element."@en ;
+  skos:inScheme asls:landform ;
+  skos:notation "H" ;
+  skos:prefLabel "Hillock"@en ;
+.
+```
+
+```turtle
+<http://anzsoil.org/def/au/asls/landform/compound-morphological-types>
+  a skos:Collection ;
+  dcterms:description "Several types of landform feature have crests and adjoining slopes that are so small that a 20 m radius site would usually include both. Two compound morphological types are distinguished by the relative length of the crest: Hillock and Ridge"@en ;
+  dcterms:identifier "http://anzsoil.org/def/au/asls/landform/compound-morphological-types"^^xsd:anyURI ;
+  rdfs:label "Compound morphological types"@en ;
+  skos:definition "Several types of landform feature have crests and adjoining slopes that are so small that a 20 m radius site would usually include both. Two compound morphological types are distinguished by the relative length of the crest: Hillock and Ridge"@en ;
+  skos:member <http://anzsoil.org/def/au/asls/landform/morphological-type-H> ;
+  skos:member <http://anzsoil.org/def/au/asls/landform/morphological-type-R> ;
+  skos:prefLabel "Compound morphological types"@en ;
+.
+```
+
+```turtle
 <http://anzsoil.org/def/au/asls/soil-profile/field-texture-CS>
   a                skos:Concept ;
   rdfs:comment     "Approximate clay content (%): 5 - 10%"@en ;
