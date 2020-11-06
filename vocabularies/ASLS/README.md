@@ -3,11 +3,17 @@
 
 The [Australian soil and land survey field handbook (3rd edn)](https://www.publish.csiro.au/book/5230/) includes definitions of a range of aspects of environmental land surveys. The print and ebook includes a conventional copyright statement containing the phrase ‘All rights reserved’ to [CSIRO Publishing: Melbourne](https://www.publish.csiro.au/). Prior to re-purposing the terms and definitions in FAIR vocabularies we contacted CSIRO Publishing to discuss our plans. After explaining the process and intentions, noting that publication as a FAIR vocabulary would allow better access and linkages between datasets and definitions, the publisher granted a specific permission to undertake the proposed re-purposing. 
 
+  - **Rule 1. Verify that the source license allows repurposing**
+
 ## Governance - who is the content-custodian
 
 The definitions in the [Australian soil and land survey field handbook (3rd edn)](https://www.publish.csiro.au/book/5230/) are organized in six chapters, each relating to a specific theme, such as Landform or Soil Profile. While the handbook is credited to the [National Committee on Soil and Terrain](https://www.directory.gov.au/portfolios/agriculture-and-water-resources/department-agriculture-and-water-resources/national-committee-soil-and-terrain), each chapter has separate authors. These authors were subject-matter experts who arranged the terms and definitions , acting as the content custodians for a theme. 
 
+  - **Rule 2. Determine the governance arrangements and custodian responsible for the legacy vocabulary**
+
 ## Term encoding
+  - **Rule 6. Create a semantic-standards based vocabulary - address Interoperability** 
+ 
 ### Landform vocabulary
 
 ```turtle
@@ -87,6 +93,8 @@ The recommended field texture grades as characterised by the behaviour of the mo
 ```
 
 ## Vocabulary metadata
+ - **Rule 7. Add rich metadata - address vocabulary Reusability** 
+
 ### Landform vocabulary
 
 ```turtle

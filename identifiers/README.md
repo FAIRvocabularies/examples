@@ -1,8 +1,9 @@
 # FAIR term identifiers
 
-Examples of individual items from some vocabularies in the [domains described here](https://github.com/FAIRvocabularies/Examples/tree/main/domains) include: 
+Examples of individual items from some vocabularies in the [persistent domains](https://github.com/FAIRvocabularies/Examples/tree/main/domains), which illustrate 
+- **Rule 5. Design an identifier scheme and pattern**.  
 
-- ‘metres per second’ is defined in four different FAIR vocabularies, some of which use term-based local-ids, while others are opaque
+- **‘metres per second’** is defined in four different FAIR vocabularies, some of which use term-based local-ids, while others are opaque
 
   - http://sweetontology.net/reprSciUnits/meterPerSecond 
   - http://qudt.org/vocab/unit/M-PER-SEC 
@@ -18,3 +19,7 @@ Examples of individual items from some vocabularies in the [domains described he
 
   - http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic 
   - http://pid.geoscience.gov.au/def/voc/ga/PlaceType/MOUNTAIN 
+
+These IRIs are actionable, following 
+- **Rule 9. Make the IRIs resolve - address vocabulary Accessibility**.  
+

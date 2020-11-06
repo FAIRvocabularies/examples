@@ -1,6 +1,8 @@
 # Geological Timescale
 ## Permission for re-purposing
 
+  - **Rule 1. Verify that the source license allows repurposing**
+
 The basic temporal-topology of the Geologic Timescale is standard knowledge in the geology community. 
 
 The more specialized aspects of the information in the vocabulary relate to the 'stratotypes' for the boundaries in the timescale - i.e. (i) the location of the type-section that has been agreed to best represent the interval spanning the boundary, and the position within the section that corresponds with the actual boundary, and (ii) the best estimate of the age of samples of rock taken from the boundary point, which calibrates the age of the boundary. All these details are published on a per-boundary basis in the scientific literature, so can be transcribed from there. The standard information for each boundary, that is used by the [International Commission on Stratigraphy](https://stratigraphy.org/) to officially assign dates to the timescale are summarized in the [tabulation of Global Boundary Stratotype Section and Points](https://stratigraphy.org/gssps/). 
@@ -9,10 +11,14 @@ However, starting in 2020, the [International Commission on Stratigraphy](https:
 
 ## Governance - who is the content-custodian
 
+  - **Rule 2. Determine the governance arrangements and custodian responsible for the legacy vocabulary**
+
 Global Boundary Stratotype Section and Points are officially ratified by the [International Commission on Stratigraphy](https://stratigraphy.org/).  
 
 
 ## Term encoding
+
+  - **Rule 6. Create a semantic-standards based vocabulary - address Interoperability** 
 
 Maintained in https://github.com/CGI-IUGS/timescale-data 
 
@@ -146,6 +152,8 @@ isc:BasePhanerozoicTime
 ```
 
 ## Vocabulary resource with metadata
+
+  - **Rule 7. Add rich metadata - address vocabulary Reusability** 
 
 ```turtle
 ts:gts2020
