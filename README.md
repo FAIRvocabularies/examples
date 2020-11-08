@@ -1,5 +1,5 @@
 # Examples
-Exemplars and patterns demonstrating practices that make a vocabulary FAIR
+Exemplars and patterns demonstrating practices that make a [vocabulary FAIR](https://fairvocabularies.github.io/)
 
 See
 - [domain-names for FAIR vocabularies](./domains) illustrating
