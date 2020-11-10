@@ -1,6 +1,6 @@
 # FAIR term identifiers
 
-Examples of individual items from some vocabularies in the [persistent domains](https://github.com/FAIRvocabularies/Examples/tree/main/domains), which illustrate 
+Examples of individual items from some vocabularies in the [persistent domains](https://fairvocabularies.github.io/examples/domains/), which illustrate 
 - **Rule 5. Design an identifier scheme and pattern**.  
 
 - **‘metres per second’** is defined in four different FAIR vocabularies, some of which use term-based local-ids, while others are opaque
