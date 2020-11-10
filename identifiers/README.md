@@ -1,7 +1,8 @@
 # FAIR term identifiers
 
 Examples of individual items from some vocabularies in the [persistent domains](https://github.com/FAIRvocabularies/Examples/tree/main/domains), which illustrate 
-- **Rule 5. Design an identifier scheme and pattern**.  
+
+- **Rule 5.** Design an identifier scheme and pattern.  
 
 - **‘metres per second’** is defined in four different FAIR vocabularies, some of which use term-based local-ids, while others are opaque
 
@@ -21,5 +22,6 @@ Examples of individual items from some vocabularies in the [persistent domains](
   - http://pid.geoscience.gov.au/def/voc/ga/PlaceType/MOUNTAIN 
 
 These IRIs are actionable, following 
-- **Rule 9. Make the IRIs resolve - address vocabulary Accessibility**.  
+
+- **Rule 9.** Make the IRIs resolve - address vocabulary Accessibility.  
 

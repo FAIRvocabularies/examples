@@ -1,7 +1,7 @@
 # Geological Timescale
 ## Permission for re-purposing
 
-  - **Rule 1. Verify that the source license allows repurposing**
+**Rule 1.** Verify that the source license allows repurposing
 
 The basic temporal-topology of the Geologic Timescale is standard knowledge in the geology community. 
 
@@ -11,18 +11,20 @@ However, starting in 2020, the [International Commission on Stratigraphy](https:
 
 ## Governance - who is the content-custodian
 
-  - **Rule 2. Determine the governance arrangements and custodian responsible for the legacy vocabulary**
+**Rule 2.** Determine the governance arrangements and custodian responsible for the legacy vocabulary
 
 Global Boundary Stratotype Section and Points are officially ratified by the [International Commission on Stratigraphy](https://stratigraphy.org/).  
 
-
 ## Term encoding
 
-  - **Rule 6. Create a semantic-standards based vocabulary - address Interoperability** 
+**Rule 6.** Create a semantic-standards based vocabulary - address Interoperability 
 
 Maintained in https://github.com/CGI-IUGS/timescale-data 
 
-Namespaces: 
+### Namespaces
+
+The FAIR Geological Timescale encodes the basic information using SKOS, but also includes a lot of more specific information using a variety of standard ontologies. 
+
 ```turtle
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
@@ -41,12 +43,16 @@ Namespaces:
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 ```
 
-Some individual members from https://github.com/CGI-IUGS/timescale-data/blob/master/rdf/isc2020.ttl
+### Vocabulary items
+
+From https://github.com/CGI-IUGS/timescale-data/blob/master/rdf/isc2020.ttl
+
+Each vocabulary item is encoded as a `skos:Concept`, and also as an instance of domain-specific classes such as `gts:StratigraphicPoint`, `gts:Eon`, `gts:GeochronologicEra`, `gts:GeochronologicBoundary`, `thors:EraBoundary`, `time:Instant`, `time:ProperInterval`. 
 
 ```turtle
 isc:Phanerozoic
 #
-# SKOS representation at the top
+# SKOS representation
 #
   a skos:Concept ;
   rdfs:comment "older bound -541.0 +|-1.0 Ma"@en ;
@@ -72,7 +78,6 @@ isc:Phanerozoic
   a gts:Eon ;
   a gts:GeochronologicEra ;
   a time:ProperInterval ;
-  gts:rank rank:Eon ;
   time:hasBeginning isc:BasePhanerozoic ;
   time:hasEnd isc:Present ;
   time:intervalContains isc:Mesozoic ;
@@ -88,7 +93,7 @@ isc:Phanerozoic
 ```turtle
 isc:BasePhanerozoic
 #
-# SKOS representation at the top
+# SKOS representation
 #
   a skos:Concept ;
   rdfs:label "Base of Phanerozoic"@en ;
@@ -112,7 +117,7 @@ isc:BasePhanerozoic
 ```turtle
 isc:BasePhanerozoicSP
 #
-# SKOS representation at the top
+# SKOS representation
 #
   a skos:Concept ;
   dct:source "Episodes 17/1 2, p. 95 100, 1994"@en ;
@@ -142,7 +147,7 @@ isc:BasePhanerozoicSP
 ```turtle
 isc:BasePhanerozoicTime
 #
-# domain specific elements below here
+# domain specific elements only - not a skos:Concept
 #
   a time:TimePosition ;
   gts:positionalUncertainty isc:BasePhanerozoicUncertainty ;
@@ -153,11 +158,19 @@ isc:BasePhanerozoicTime
 
 ## Vocabulary resource with metadata
 
-  - **Rule 7. Add rich metadata - address vocabulary Reusability** 
+**Rule 7.** Add rich metadata - address vocabulary Reusability 
+
+This vocabulary has a long history, so alongside the usual descriptive metadata, there is a set of dated `skos:changeNote` entries (many omitted here). 
 
 ```turtle
 ts:gts2020
   a skos:ConceptScheme ;
+  dct:title "Geologic Time Scale (2020)"@en ;
+  rdfs:label "Geologic Time Scale (2020)"@en ;
+  skos:altLabel "International Chronostratigraphic Chart (2020)"@en ;
+  skos:hasTopConcept isc:Phanerozoic ;
+  skos:hasTopConcept isc:Precambrian ;
+  skos:prefLabel "Geological Timescale (2020)"@en ;
   dct:contributor "Chinese and Japanese preferred labels from SKOS by Xiaogang Ma, adopted from Asian Multilingual Thesaurus of Geosciences."@en ;
   dct:contributor "International Commission on Stratigraphy"@en ;
   dct:contributor "OneGeology Europe preferred labels merged in by S.M. Richard."@en ;
@@ -173,19 +186,17 @@ ts:gts2020
   dct:source "Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@en ;
   dct:source "International Chronostratigraphic Chart 2020"@en ;
   dct:subject <http://dbpedia.org/page/Geologic_time_scale> ;
-  dct:title "Geologic Time Scale (2020)"@en ;
-  rdfs:label "Geologic Time Scale (2020)"@en ;
   rdfs:seeAlso <http://resource.geosciml.org/classifier/ics/ischart/2020> ;
   rdfs:seeAlso <http://stratigraphy.org/GSSP/index.html> ;
   rdfs:seeAlso <http://www.episodes.co.in/contents/2013/september/p199-204.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   rdfs:seeAlso <https://stratigraphy.org/icschart/ChronostratChart2020-01.pdf> ;
   owl:versionInfo "gts2020:2020-01-13" ;
-  skos:altLabel "International Chronostratigraphic Chart (2020)"@en ;
-  skos:hasTopConcept isc:Phanerozoic ;
-  skos:hasTopConcept isc:Precambrian ;
-  skos:prefLabel "Geological Timescale (2020)"@en ;
   sdo:codeRepository <https://github.com/CGI-IUGS/timescale-data.git> ;
+  skos:editorialNote """<p>This dataset is being <a href=\"https://github.com/CGI-IUGS/timescale-data/\">maintained in GitHub</a></p>
+<p>Please report errors, or propose improvements, using the <a href=\"https://github.com/CGI-IUGS/timescale-data/issues\">GitHub issue-tracker</a>."""^^rdf:HTML ;
+  a gts:GeologicTimescale ;
+  a time:TRS ;
   skos:changeNote "2009-05-01 Introduced Holocene subdivisions, as shown in 2018 version from stratigraphy.org - see "@en ;
   skos:changeNote """2017-02-22 Added additional collections for eras of each rank;
 classified rank-based collections using XKOS;
@@ -200,7 +211,6 @@ nested sub-collections in GeochronologicEra"""@en ;
   skos:changeNote """2019-06-10 - This revision adjusts the nomenclature of units to use only chronologic terminology rather than stratigraphic terminology [e.g. Cambrian-Age 2 in place of Cambrian-Stage 2; Cambrian-Epoch 2 in place of Cambrian-Series 2; Early/Late in place of Lower/Upper (namely in application to Epoch/time units rather than their equivalent Series/stratigraphic units—e.g. Early Jurassic Epoch rather than Lower Jurassic Series)]; and the whole artefact is renamed ‘Geologic Time Scale’. 
 Also: changed samfl:shape --> geo:hasGeometry"""@en ;
   skos:changeNote "2020-01-13 - fix errors in Permian/Carboniferous - see https://github.com/GeoscienceAustralia/geosciml.org/issues/3#issuecomment-560054965"@en ;
-  skos:changeNote "2020-01-13 - updated to 2019 version see http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017-2018-2019.txt"@en ;
   skos:changeNote "2020-06-05 - updated to 2020 version see https://stratigraphy.org/icschart/ChangeLog2012-2013-2014-2015-2016-2017-2018-2019-2020.txt"@en ;
   skos:changeNote """2020-08-26 - 
 1. removed concepts added to spoof the RVA preview; 
@@ -211,10 +221,5 @@ Also: changed samfl:shape --> geo:hasGeometry"""@en ;
   skos:changeNote """2020-09-08
 Changed all collections of eras of a single rank into OrderedCollections""" ;
   skos:changeNote "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017-2018.txt> for changes from prior versions"@en ;
-  skos:editorialNote """<p>This dataset is being <a href=\"https://github.com/CGI-IUGS/timescale-data/\">maintained in GitHub</a></p>
- 
-<p>Please report errors, or propose improvements, using the <a href=\"https://github.com/CGI-IUGS/timescale-data/issues\">GitHub issue-tracker</a>."""^^rdf:HTML ;
-  a gts:GeologicTimescale ;
-  a time:TRS ;
 .
 ```
