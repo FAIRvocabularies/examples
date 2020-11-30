@@ -1,4 +1,4 @@
-# Examples
+# Examples of FAIR Vocabularies 
 Exemplars and patterns demonstrating practices that make a [vocabulary FAIR](https://fairvocabularies.github.io/)
 
 ## [Domain-names for FAIR vocabularies](./domains) 
