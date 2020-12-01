@@ -1,5 +1,5 @@
 ---
-permalink: /vocabularies/envthes/
+permalink: /vocabularies/EnvThes/
 layout: default
 title: Environmental Thesaurus (EnvThes)
 ---
