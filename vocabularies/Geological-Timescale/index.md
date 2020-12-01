@@ -1,5 +1,5 @@
 ---
-permalink: /vocabularies/geological-timescale/
+permalink: /vocabularies/Geological-Timescale/
 layout: default
 title: Geological Timescale
 ---
