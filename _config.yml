@@ -2,6 +2,8 @@ title: FAIR Vocabularies Examples
 description: Examples of FAIR vocabularies and their guidelines
 theme: jekyll-theme-minimal
 
+baseurl: /examples
+
 # plugins:
 #   - jekyll-relative-links
 # relative_links:
