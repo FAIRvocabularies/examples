@@ -1,5 +1,5 @@
 ---
-permalink: /vocabularies/nci-thesaurus/
+permalink: /vocabularies/NCI-Thesaurus/
 layout: default
 title: NCI Thesaurus
 ---
