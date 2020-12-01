@@ -1,5 +1,5 @@
 ---
-permalink: /vocabularies/asls/
+permalink: /vocabularies/ASLS/
 layout: default
 title: Australian Soil and Landscape Survey vocabularies
 ---
