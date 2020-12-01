@@ -1,3 +1,9 @@
+---
+permalink: /vocabularies/geological-timescale/
+layout: default
+title: Geological Timescale
+---
+
 # Geological Timescale
 ## Permission for re-purposing
 

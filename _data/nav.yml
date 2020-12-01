@@ -1,0 +1,13 @@
+title: Menu
+menuitems:
+  - title: Guidelines 
+    url: https://fairvocabularies.github.io/
+
+  - title: Domain names
+    url: /domains/ 
+    
+  - title: Identifiers
+    url: /identifiers/
+
+  - title: Vocabularies
+    url: /vocabularies/

@@ -1,2 +1,0 @@
-# Hazard Information Profiles 
-

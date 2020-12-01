@@ -1,3 +1,9 @@
+---
+permalink: /vocabularies/
+layout: default
+title: Vocabularies
+---
+
 # Encoded terms and vocabularies
 
 - [Australian Soil and Landscape Survey](./ASLS)

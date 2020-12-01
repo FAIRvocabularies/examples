@@ -1,3 +1,9 @@
+---
+permalink: /domains/
+layout: default
+title: FAIR domain names
+---
+
 # FAIR domain names
 
 Examples of persistent domains that are in use for FAIR vocabularies, which illustrate 

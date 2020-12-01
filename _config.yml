@@ -1,11 +1,19 @@
 title: FAIR Vocabularies Examples
+description: Examples of FAIR vocabularies and their guidelines
 theme: jekyll-theme-minimal
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
+
+# plugins:
+#   - jekyll-relative-links
+# relative_links:
+#   enabled: true
+#   collections: true
+
 include:
+  - domains
+  - identifiers
+  - vocabularies
+
+exclude:
   - CONTRIBUTING.md
   - README.md
   - LICENSE.md

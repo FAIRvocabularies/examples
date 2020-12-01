@@ -1,3 +1,9 @@
+---
+permalink: /vocabularies/asls/
+layout: default
+title: Australian Soil and Landscape Survey vocabularies
+---
+
 # Australian Soil and Landscape Survey vocabularies
 
 ## Permission for re-purposing

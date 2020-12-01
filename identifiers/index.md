@@ -1,3 +1,9 @@
+---
+permalink: /identifiers/
+layout: default
+title: FAIR term identifiers
+---
+
 # FAIR term identifiers
 
 Examples of individual items from some vocabularies in the [persistent domains](../domains), which illustrate 

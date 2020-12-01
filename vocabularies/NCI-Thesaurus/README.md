@@ -1,2 +1,0 @@
-# NCI Thesaurus
-
