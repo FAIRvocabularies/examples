@@ -1,5 +1,5 @@
 ---
-permalink: /vocabularies/hips/
+permalink: /vocabularies/HIPs/
 layout: default
 title: Hazard Information Profiles
 ---
