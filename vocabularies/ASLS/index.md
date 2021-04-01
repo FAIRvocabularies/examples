@@ -6,21 +6,47 @@ title: Australian Soil and Landscape Survey vocabularies
 
 # Australian Soil and Landscape Survey vocabularies
 
-## Permission for re-purposing
-
-**Rule 1.** Verify that the source license allows repurposing
-
-The [Australian soil and land survey field handbook (3rd edn)](https://www.publish.csiro.au/book/5230/) includes definitions of a range of aspects of environmental land surveys. The print and ebook includes a conventional copyright statement containing the phrase ‘All rights reserved’ to [CSIRO Publishing: Melbourne](https://www.publish.csiro.au/). Prior to re-purposing the terms and definitions in FAIR vocabularies we contacted CSIRO Publishing to discuss our plans. After explaining the process and intentions, noting that publication as a FAIR vocabulary would allow better access and linkages between datasets and definitions, the publisher granted a specific permission to undertake the proposed re-purposing. 
-
 ## Governance - who is the content-custodian
 
-**Rule 2.** Determine the governance arrangements and custodian responsible for the legacy vocabulary
+**Rule 1.** Determine the governance arrangements and custodian of the legacy vocabulary
 
 The definitions in the [Australian soil and land survey field handbook (3rd edn)](https://www.publish.csiro.au/book/5230/) are organized in six chapters, each relating to a specific theme, such as Landform or Soil Profile. While the handbook is credited to the [National Committee on Soil and Terrain](https://www.directory.gov.au/portfolios/agriculture-and-water-resources/department-agriculture-and-water-resources/national-committee-soil-and-terrain), each chapter has separate authors. These authors were subject-matter experts who arranged the terms and definitions , acting as the content custodians for a theme. 
 
+## Permission for re-purposing
+
+**Rule 2.** Verify that the legacy-vocabulary license allows repurposing, and agree on the license for the FAIR vocabulary
+
+The [Australian soil and land survey field handbook (3rd edn)](https://www.publish.csiro.au/book/5230/) includes definitions of a range of aspects of environmental land surveys. The print and ebook includes a conventional copyright statement containing the phrase ‘All rights reserved’ to [CSIRO Publishing: Melbourne](https://www.publish.csiro.au/). Prior to re-purposing the terms and definitions in FAIR vocabularies we contacted CSIRO Publishing to discuss our plans. After explaining the process and intentions, noting that publication as a FAIR vocabulary would allow better access and linkages between datasets and definitions, the publisher granted a specific permission to undertake the proposed re-purposing. 
+
+## Maintenance environment
+
+**Rule 4.** Establish a technical maintenance environment for the FAIR vocabulary artefacts
+
+All of the technical artefacts, including the RDF-encoded content (as TTL files) are maintained in a [Bitbucket repository](https://bitbucket.csiro.au/projects/EIS/repos/australian-soil-vocabularies/browse/asls). 
+
+The content is published in [CSIRO's Linked Data Registry](http://registry.it.csiro.au/def/soil/au/asls) which allows for continuous fine-grained update, with full version tracking.  
+
+## persistent unique identifiers
+
+**Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
+
+Terms from the ASLS are denoted by URIs beginning [http://anzsoil.org/def/au/asls/](http://anzsoil.org/def/au/asls). 
+
+Each chapter is denoted by a child URI
+- Landform terms in [http://anzsoil.org/def/au/asls/landform](http://anzsoil.org/def/au/asls/landform)
+- Soil profile terms in [http://anzsoil.org/def/au/asls/soil-prof](http://anzsoil.org/def/au/asls/soil-prof)
+
+Collections and individual terms are further childern, e.g. 
+- Collection of observable properties of soil-horizons [http://anzsoil.org/def/au/asls/soil-profile/observable-properties](http://anzsoil.org/def/au/asls/soil-profile/observable-properties)
+- Individual observable property [http://anzsoil.org/def/au/asls/soil-profile/condition-of-surface-soil-when-dry](http://anzsoil.org/def/au/asls/soil-profile/condition-of-surface-soil-when-dry)
+- Individual field-texture classification [http://anzsoil.org/def/au/asls/soil-profile/field-texture-LMC](http://anzsoil.org/def/au/asls/soil-profile/field-texture-LMC)
+
+Note that the URI scheme for this vocabulary reflects the nesting structure of the source material in the path. 
+Note that identifiers are non-opaque - the elements of the URI are based on the labels of the collections and concepts. 
+
 ## Term encoding
 
-**Rule 6.** Create a semantic-standards based vocabulary - address Interoperability 
+**Rule 6.** Create machine readable representations of the vocabulary terms 
  
 ### Landform vocabulary
 
@@ -105,7 +131,7 @@ The recommended field texture grades as characterised by the behaviour of the mo
 
 ## Vocabulary metadata
 
-**Rule 7.** Add rich metadata - address vocabulary Reusability
+**Rule 7.** Add vocabulary metadata
 
 ### Landform vocabulary
 
@@ -154,3 +180,20 @@ The recommended field texture grades as characterised by the behaviour of the mo
   skos:changeNote "2020-09-16 - Added skos:inScheme and skos:topConceptOf links to asls:soil-profile; removed redundant owl:sameAs links" ;
 .
 ```
+
+## Vocabulary registration
+
+**Rule 8.** Register the vocabulary
+
+Need to register it in RVA
+
+Also register in Bioportal, FAIRsharing?
+
+
+## Vocabulary access
+
+**Rule 9.** Make the vocabulary accessible for humans and machines 
+
+LDR publication
+
+
