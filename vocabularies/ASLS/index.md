@@ -26,7 +26,7 @@ All of the technical artefacts, including the RDF-encoded content (as TTL files)
 
 The content is published in [CSIRO's Linked Data Registry](http://registry.it.csiro.au/def/soil/au/asls) which allows for continuous fine-grained update, with full version tracking.  
 
-## persistent unique identifiers
+## Persistent unique identifiers
 
 **Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
 
@@ -41,7 +41,8 @@ Collections and individual terms are further childern, e.g.
 - Individual observable property [http://anzsoil.org/def/au/asls/soil-profile/condition-of-surface-soil-when-dry](http://anzsoil.org/def/au/asls/soil-profile/condition-of-surface-soil-when-dry)
 - Individual field-texture classification [http://anzsoil.org/def/au/asls/soil-profile/field-texture-LMC](http://anzsoil.org/def/au/asls/soil-profile/field-texture-LMC)
 
-Note that the URI scheme for this vocabulary reflects the nesting structure of the source material in the path. 
+Note that the URI scheme for this vocabulary reflects the first-order arrangement of the source material (chapters in a book) as the path. 
+
 Note that identifiers are non-opaque - the elements of the URI are based on the labels of the collections and concepts. 
 
 ## Term encoding
