@@ -9,19 +9,19 @@ Exemplars and patterns demonstrating practices that make a [vocabulary FAIR](htt
 
 ## [Domain-names for FAIR vocabularies](./domains) 
 
-[These](./domains) illustrate
+[These examples](./domains) illustrate
 - **Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
 - **Rule 9.** Make the vocabulary accessible for humans and machines 
 
 ## [Identifier patterns for terms in FAIR vocabularies](./identifiers)
 
-[These](./identifiers) illustrate
+[These examples](./identifiers) illustrate
 - **Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
 - **Rule 9.** Make the vocabulary accessible for humans and machines 
 
 ## [Examples of real FAIR vocabularies](./vocabularies)
 
-[These](./vocabularies) illustrate
+[These examples](./vocabularies) illustrate
 - **Rule 1.** Determine the governance arrangements and custodian responsible for the legacy vocabulary
 - **Rule 2.** Verify that the source license allows repurposing
 - **Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
