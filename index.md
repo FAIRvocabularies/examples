@@ -10,20 +10,21 @@ Exemplars and patterns demonstrating practices that make a [vocabulary FAIR](htt
 ## [Domain-names for FAIR vocabularies](./domains) 
 
 [These](./domains) illustrate
-- **Rule 4.** Select a domain and service for the web identifiers
+- **Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
+- **Rule 9.** Make the vocabulary accessible for humans and machines 
 
 ## [Identifier patterns for terms in FAIR vocabularies](./identifiers)
 
 [These](./identifiers) illustrate
-- **Rule 5.** Design an identifier scheme and pattern
-- **Rule 9.** Make the IRIs resolve - address vocabulary Accessibility
+- **Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
+- **Rule 9.** Make the vocabulary accessible for humans and machines 
 
 ## [Examples of real FAIR vocabularies](./vocabularies)
 
 [These](./vocabularies) illustrate
-- **Rule 1.** Verify that the source license allows repurposing
-- **Rule 2.** Determine the governance arrangements and custodian responsible for the legacy vocabulary
-- **Rule 5.** Design an identifier scheme and pattern
-- **Rule 6.** Create a semantic-standards based vocabulary - address Interoperability
-- **Rule 7.** Add rich metadata - address vocabulary Reusability 
+- **Rule 1.** Determine the governance arrangements and custodian responsible for the legacy vocabulary
+- **Rule 2.** Verify that the source license allows repurposing
+- **Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
+- **Rule 6.** Create machine readable representations of the vocabulary terms
+- **Rule 7.** Add vocabulary metadata 
 
