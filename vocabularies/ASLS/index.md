@@ -186,15 +186,33 @@ The recommended field texture grades as characterised by the behaviour of the mo
 
 **Rule 8.** Register the vocabulary
 
-Need to register it in RVA
-
-Also register in Bioportal, FAIRsharing?
+The FAIR ASLS vocabularies are registered in 
+- Research Vocabularies Australia
+  - [Soil Profile](https://vocabs.ardc.edu.au/viewById/313)
+  - [Landform](https://vocabs.ardc.edu.au/viewById/314)
+  - [Land surface](https://vocabs.ardc.edu.au/viewById/315)
+ - Bioportal
+  - [Soil Profile](https://fairsharing.org/bsg-s001603/)
+  - [Landform](https://fairsharing.org/bsg-s001604/)
+  - [Land surface](https://fairsharing.org/bsg-s001605/)
+ - FAIRsharing
+  - [Soil Profile](https://bioportal.bioontology.org/ontologies/SOIL-PROF)
+  - [Landform](https://bioportal.bioontology.org/ontologies/LANDFORM)
+  - [Land surface](https://bioportal.bioontology.org/ontologies/LAND-SURFACE)
 
 
 ## Vocabulary access
 
 **Rule 9.** Make the vocabulary accessible for humans and machines 
 
-LDR publication
+The FAIR ASLS vocabularies are published on the 
+- CSIRO Linked Data Registry
+  - [Soil Profile](http://registry.it.csiro.au/def/soil/au/asls/soil-prof)
+  - [Landform](http://registry.it.csiro.au/def/soil/au/asls/landform)
+  - [Land surface](http://registry.it.csiro.au/sandbox/soil/asls/land-surface)
+- Research Vocabularies Australia
+  - [Soil Profile](https://vocabs.ardc.edu.au/viewById/313)
+  - [Landform](https://vocabs.ardc.edu.au/viewById/314)
+  - [Land surface](https://vocabs.ardc.edu.au/viewById/315)
 
 
