@@ -192,14 +192,13 @@ The FAIR ASLS vocabularies are registered in
   - [Landform](https://vocabs.ardc.edu.au/viewById/314)
   - [Land surface](https://vocabs.ardc.edu.au/viewById/315)
 - Bioportal
-  - [Soil Profile](https://fairsharing.org/bsg-s001603/)
-  - [Landform](https://fairsharing.org/bsg-s001604/)
-  - [Land surface](https://fairsharing.org/bsg-s001605/)
-- FAIRsharing
   - [Soil Profile](https://bioportal.bioontology.org/ontologies/SOIL-PROF)
   - [Landform](https://bioportal.bioontology.org/ontologies/LANDFORM)
   - [Land surface](https://bioportal.bioontology.org/ontologies/LAND-SURFACE)
-
+- FAIRsharing
+  - [Soil Profile](https://fairsharing.org/bsg-s001603/)
+  - [Landform](https://fairsharing.org/bsg-s001604/)
+  - [Land surface](https://fairsharing.org/bsg-s001605/)
 
 ## Vocabulary access
 
