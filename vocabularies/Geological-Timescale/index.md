@@ -5,9 +5,12 @@ title: Geological Timescale
 ---
 
 # Geological Timescale
-## Permission for re-purposing
+## Governance - who is the content-custodian
+**Rule 1.** Determine the governance arrangements and custodian of the legacy vocabulary
 
-**Rule 1.** Verify that the source license allows repurposing
+Global Boundary Stratotype Section and Points are officially ratified by the [International Commission on Stratigraphy](https://stratigraphy.org/).  
+## Permission for re-purposing
+**Rule 2.** Verify that the legacy-vocabulary license allows repurposing, and agree on the license for the FAIR vocabulary
 
 The basic temporal-topology of the Geologic Timescale is standard knowledge in the geology community. 
 
@@ -15,156 +18,20 @@ The more specialized aspects of the information in the vocabulary relate to the 
 
 However, starting in 2020, the [International Commission on Stratigraphy](https://stratigraphy.org/) has agreed to used the FAIR vocabulary as the point-of-truth, all the resources on their website (the table of GSSPs, and the coloured chart) will be generated from the semantic resources.  
 
-## Governance - who is the content-custodian
-
-**Rule 2.** Determine the governance arrangements and custodian responsible for the legacy vocabulary
-
-Global Boundary Stratotype Section and Points are officially ratified by the [International Commission on Stratigraphy](https://stratigraphy.org/).  
-
-## Term encoding
-
-**Rule 6.** Create a semantic-standards based vocabulary - address Interoperability 
+## Maintenance environment
+**Rule 4.** Establish a technical maintenance environment for the FAIR vocabulary artefacts
 
 Maintained in https://github.com/CGI-IUGS/timescale-data 
 
-### Namespaces
+## Persistent unique identifiers
+**Rule 5.** Assign a unique identifier to (a) the vocabulary and (b) each term in the vocabulary
 
-The FAIR Geological Timescale encodes the basic information using SKOS, but also includes a lot of more specific information using a variety of standard ontologies. 
+## Term encoding
+**Rule 6.** Create machine readable representations of the vocabulary terms 
 
-```turtle
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .
-@prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> .
-@prefix iso-trs: <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rank: <http://resource.geosciml.org/ontology/timescale/rank/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sf: <http://www.opengis.net/ont/sf#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix ts: <http://resource.geosciml.org/vocabulary/timescale/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-```
 
-### Vocabulary items
-
-From https://github.com/CGI-IUGS/timescale-data/blob/master/rdf/isc2020.ttl
-
-Each vocabulary item is encoded as a `skos:Concept`, and also as an instance of domain-specific classes such as `gts:StratigraphicPoint`, `gts:Eon`, `gts:GeochronologicEra`, `gts:GeochronologicBoundary`, `thors:EraBoundary`, `time:Instant`, `time:ProperInterval`. 
-
-```turtle
-isc:Phanerozoic
-#
-# SKOS representation
-#
-  a skos:Concept ;
-  rdfs:comment "older bound -541.0 +|-1.0 Ma"@en ;
-  rdfs:comment "younger bound -0.0 Ma"@en ;
-  rdfs:label "Phanerozoic Eon"@en ;
-  skos:inScheme ts:gts2020 ;
-  skos:narrower isc:Cenozoic ;
-  skos:narrower isc:Mesozoic ;
-  skos:narrower isc:Paleozoic ;
-  skos:notation "a1.1"^^gts:EraCode ;
-  skos:prefLabel "Fanerosoikum"@et ;
-  skos:prefLabel "Fanerotsoikum"@fi ;
-  skos:prefLabel "Phanerozoic"@en ;
-  skos:prefLabel "Phanerozoikum"@de ;
-  skos:prefLabel "Phanerozoisk"@da ;
-  skos:prefLabel "Фанерозой"@bg ;
-  skos:prefLabel "显生宙"@zh ;
-  skos:prefLabel "顕生代"@ja ;
-  skos:topConceptOf ts:gts2020 ;
-#
-# domain specific elements below here
-#
-  a gts:Eon ;
-  a gts:GeochronologicEra ;
-  a time:ProperInterval ;
-  time:hasBeginning isc:BasePhanerozoic ;
-  time:hasEnd isc:Present ;
-  time:intervalContains isc:Mesozoic ;
-  time:intervalFinishedBy isc:Cenozoic ;
-  time:intervalMetBy isc:Ediacaran ;
-  time:intervalMetBy isc:Neoproterozoic ;
-  time:intervalMetBy isc:Precambrian ;
-  time:intervalMetBy isc:Proterozoic ;
-  time:intervalStartedBy isc:Paleozoic ;
-.
-```
-
-```turtle
-isc:BasePhanerozoic
-#
-# SKOS representation
-#
-  a skos:Concept ;
-  rdfs:label "Base of Phanerozoic"@en ;
-  skos:altLabel "Base of Cambrian"@en ;
-  skos:altLabel "Base of Fortunian"@en ;
-  skos:altLabel "Base of Paleozoic"@en ;
-  skos:altLabel "Base of Terreneuvian"@en ;
-  skos:inScheme ts:gts2020 ;
-  skos:prefLabel "Base of Phanerozoic"@en ;
-#
-# domain specific elements below here
-#
-  a gts:GeochronologicBoundary ;
-  a thors:EraBoundary ;
-  a time:Instant ;
-  gts:stratotype isc:BasePhanerozoicSP ;
-  time:inTemporalPosition isc:BasePhanerozoicTime ;
-.
-```
-
-```turtle
-isc:BasePhanerozoicSP
-#
-# SKOS representation
-#
-  a skos:Concept ;
-  dct:source "Episodes 17/1 2, p. 95 100, 1994"@en ;
-  rdfs:comment "Fortune Head, SE Newfoundland, Canada"@en ;
-  rdfs:label "Stratotype Point Base of Fortunian"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Fortunian.pdf> ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  rdfs:seeAlso <https://timescalefoundation.org/gssp/image.php?periodid=156&top_parentid=0&imageid=341> ;
-  skos:altLabel "Stratotype Point Base of Cambrian"@en ;
-  skos:altLabel "Stratotype Point Base of Paleozoic"@en ;
-  skos:altLabel "Stratotype Point Base of Phanerozoic"@en ;
-  skos:altLabel "Stratotype Point Base of Terrenuvian"@en ;
-  skos:prefLabel "Stratotype Point Base of Fortunian"@en ;
-#
-# domain specific elements below here
-#
-  a gts:StratigraphicPoint ;
-  gts:boundaryLevel "2.4m above the Base of Member 2 in the Chapel Island Formation"@en ;
-  gts:correlationEvent "Trace fossil FAD Trichophycus pedum"@en ;
-  gts:ratifiedGSSP true ;
-  gts:representsBoundary isc:BasePhanerozoic ;
-  gts:status "Ratified 1992"@en ;
-  geo:hasGeometry isc:BasePhanerozoic-location ;
-.
-```
-
-```turtle
-isc:BasePhanerozoicTime
-#
-# domain specific elements only - not a skos:Concept
-#
-  a time:TimePosition ;
-  gts:positionalUncertainty isc:BasePhanerozoicUncertainty ;
-  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
-  time:numericPosition 541.0 ;
-.
-```
-
-## Vocabulary resource with metadata
-
-**Rule 7.** Add rich metadata - address vocabulary Reusability 
+## Vocabulary metadata
+**Rule 7.** Add vocabulary metadata 
 
 This vocabulary has a long history, so alongside the usual descriptive metadata, there is a set of dated `skos:changeNote` entries (many omitted here). 
 
@@ -229,3 +96,10 @@ Changed all collections of eras of a single rank into OrderedCollections""" ;
   skos:changeNote "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017-2018.txt> for changes from prior versions"@en ;
 .
 ```
+
+## Vocabulary registration
+**Rule 8.** Register the vocabulary
+
+## Vocabulary access
+**Rule 9.** Make the vocabulary accessible for humans and machines
+
